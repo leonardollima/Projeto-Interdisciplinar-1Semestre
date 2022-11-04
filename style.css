@@ -223,13 +223,13 @@ h2{
     font-weight: bold;
 
 }
-#temas{
+.temas{
     margin-top: 100px;
     justify-content: center;
     
 }
 
-#banner{
+.banner{
     height: 120px;
     width: 250px;
     background-color: #005C6E;
@@ -242,20 +242,20 @@ article{
     height: 1300px;
 }
 
-#banner img{
+.banner img{
     width: 100px;
     height: 90px;
     margin: auto;
 }
 
-#descricao{
+.descricao{
     height: 120px;
     width: 800px;
     background-color: #fff;
     display: grid;
 }
 
-#descricao h3{
+.descricao h3{
     padding-left: 15px;
     max-height: 20px;
     margin-top: 10px;
@@ -266,7 +266,7 @@ article{
  
 }
 
-#descricao p{
+.descricao p{
     max-height: 100px;
     text-align: left;
     padding-left: 15px;
@@ -275,14 +275,14 @@ article{
     
 }
 
-#github{
+.github{
     height: 120px;
     width: 250px;
     background-color: #005C6E;
     border-radius: 0px 20px 20px 0px;
 }
 
-#github a{
+.github a{
     display: grid;
     color: #fff;
     text-decoration: none;
@@ -292,7 +292,7 @@ article{
 }
 
 
-#github a img{
+.github a img{
     height: 70px;
     text-align: center;
     
