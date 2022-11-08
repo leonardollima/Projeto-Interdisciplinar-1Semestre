@@ -14,15 +14,132 @@
 }
 
 
-
 /*CABEÇALHO*/
 .cabecalho{
-    background-color: #931914;
-    height: 50px;
     width: 100%;
+    background-color: #EAEDED; 
+    flex-direction: column;
+    margin-bottom: 200px;
+    display: flex;
+    margin: auto;
+    height: 100%;
     
 }
 
+
+/*ACESSIBILIDADE*/
+.acessibilidade{
+    background-color: #931914;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.acessibilidade a{
+    color: #EAEDED;
+    text-decoration: none;
+}
+
+.acessibilidade li{
+    margin: 10px;
+}
+
+.atalhos, .links_access{
+    list-style: none;
+    display: inline-flex;
+    
+}
+
+.atalhos{
+   padding-left: 70px; 
+
+}
+
+.links_access{
+    padding-right: 70px;
+    
+}
+
+  
+/*IMAGENS CABEÇALHO*/
+.icones_informativos{
+    display: flex;
+    width: 100%;
+    background-color: #EAEDED;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.esquerda{
+    padding-left: 5%;
+}
+
+.direita{
+    padding-right: 5%;
+}
+
+#logo_fatec{
+    width: 150px;
+    padding: 15px 30px 5px 0px;
+    border-right: solid 2px #C0C0C0;
+}
+
+#logo_cps{
+    width: 91px;
+    margin-left: 26px;
+}
+
+.direita img{
+    width: 38px;
+    margin-left: 15px;
+}
+
+
+/*MENU DE NAVEGAÇÃO*/
+.menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #EAEDED;
+    justify-content: center; 
+    padding: 10px 0px 40px 0px; 
+}
+
+.menu_navegacao{
+    list-style: none;
+    display: inline-flex;
+    height: 100%;
+    
+}
+
+.menu_navegacao li{
+    font-family: 'Open Sans', serif;
+    font-weight: 300;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-transform: none;
+    color: #333333;
+    
+}
+
+.menu_navegacao li:hover{
+    border-top: solid 2px #931914;
+    cursor: pointer;
+}
+
+.menu_navegacao li a{
+    font-family: 'Open Sans', serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    color: #333333;
+}
 
 
 /*INFORMATIVO/DESCRITIVO sobre o Projeto Interdisciplinar*/
@@ -83,8 +200,6 @@
     background-color: #EAEDED;
     border-radius: 0px 10px 10px 0px;
     padding: 10px 0px;
-
-
 }
 
 .infodata .info p{
@@ -109,7 +224,6 @@
     border-radius: 5px;
     color: #005C6E;
     font-weight: bold;
-
 }
 
 
@@ -118,9 +232,9 @@
 .projetos{
     background-color: #EAEDED;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .projetos h1{
@@ -128,11 +242,10 @@
     margin-top: 70px;
     padding-top: 25px;
     justify-self: center;
-    max-width: 45%;
+    width: 45%;
     border-top: 2px solid #931914;
     color: #005C6E;
     font-size: 1.2em;
-
 }
 
 .projetos h2{
@@ -150,7 +263,6 @@
     padding-bottom: 100px;
     justify-content: center;
     margin: auto;
-    
 }
 
 
@@ -160,14 +272,12 @@
     background-color: #005C6E;
     border-radius: 10px 0px 0px 10px;
     width: 20%;
-    
 }
 
 .temas .banner img{
     width: 100%;
     margin: auto;
     max-width: 40%;
-
 }
 
 
@@ -193,9 +303,7 @@
     flex-direction: column;
     border-radius: 0px 10px 10px 0px;
     width: 20%;
-    background-color: #005C6E;
-
-    
+    background-color: #005C6E; 
 }
 
 .temas .github a{
@@ -222,6 +330,22 @@
 
 
 /*RESPONSIVIDADE*/
+@media screen and (max-width: 820px){
+    .atalhos{
+        display: none;
+    }
+
+    .links_access{
+        padding: 0;
+    }
+
+    .acessibilidade{
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+
 @media screen and (max-width: 650px){
     .banner{
         display: none;
@@ -242,4 +366,13 @@
     .github p{
         display: none;
     }
+}
+
+@media screen and (max-width: 400px){
+    .acessibilidade{
+        font-size: 0.8em;
+        margin: auto;
+    }
+
+    
 }

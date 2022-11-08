@@ -12,10 +12,57 @@
     
     <!--CABEÇALHO-->
     <header class="flex-container cabecalho">
-
+        
+        <!--BARRA DE ACESSIBILIDADE-->
+        <div class="acessibilidade flex-container">
+            <ul class="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#rodape" accesskey="2" title="Ir para o menu de navegação">Ir para o rodapé[2]</a></li>
+            </ul>
+            <ul class="links_access">
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="javascript:void(0);" id="contraste">Alto Contraste</a></li>
+                <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
+                <li><a href="javascript:void(0);" id="diminui">A-</a></li>
+            </ul>
+        </div>
+    
+        <!--IMAGENS DO CABEÇALHO-->
+        <div class="icones_informativos">
+            <div class="sessao_metade esquerda">
+                 <img src="imagens/Logo-Fatec.png" alt="Logo da Fatec ZL em cinza e vermelho" id="logo_fatec">
+                 <img src="imagens/logo-cps.png" alt="Logo do Centro Paula Souza em vermelho" id="logo_cps">
+            </div>
+    
+            <div class="sessao_metade direita">
+                <img src="imagens/Logo-Facebook.png" alt="Logo do facebook em cinza">
+                <img src="imagens/Logo-Youtube.png" alt="Logo do youtube em cinza">
+                <img src="imagens/Logo-Instagram.png" alt="Logo do instagram em cinza">
+            </div>
+        </div>
+        
+        <!--MENU DE NAVEGAÇÃO-->
+        <nav class="menu">
+            <ul class="menu_navegacao">
+                <li><a href="index.html">Início</a></li> 
+                <li>Institucional</li>
+                <li>Biblioteca</li>
+                <li>Secretaria</li>
+                <li>Cursos</li>
+                <li>Área Do Aluno</li>
+                <li>EAD</li>
+                <li>Professores</li>
+                <li>Vestibular</li>
+                <li>E-Mail</li>
+                <li>Suporte DTI</li>
+                <li><a href="assets/paginas/projetos.html">Projetos</a></li>
+                <li>Fale Conosco</li>
+            </ul>
+        </nav> 
+        
     </header>
     
-    <main>
+    <main id="conteudo">
         <!--PROJETO INTERDISCIPLINAR-->
         <section class="flex-container">
             <header class="cadastro">
@@ -106,7 +153,7 @@
     </main>
 
     <!--RODAPÉ-->
-    <footer class="rodape">
+    <footer class="rodape" id="rodape">
 
     </footer>
 
