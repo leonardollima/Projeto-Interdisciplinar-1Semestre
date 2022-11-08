@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 1em;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+
+
+
+/*CABEÇALHO*/
+.cabecalho{
+    background-color: #931914;
+    height: 50px;
+    width: 100%;
+    
+}
+
+
+
+/*INFORMATIVO/DESCRITIVO sobre o Projeto Interdisciplinar*/
+.cadastro h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #931914;
+    color: #005C6E;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.cadastro p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #333333;
+}
+
+
+
+/*Container DATA e INFORMATIVO*/
+.infodata{
+    display: flex;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    max-width: 75%;
+    justify-content: center;
+     
+}
+
+
+
+/*Container DATA*/
+.infodata .data{
+    width: 30%;
+    padding: 15px 0px;
+    background-color: #005C6E;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.infodata .data p{
+    margin: auto;
+    color: #fff;
+}
+
+
+
+/*Container INFORMATIVO*/
+.infodata .info{
+    width: 70%;
+    background-color: #EAEDED;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 0px;
+
+
+}
+
+.infodata .info p{
+    color: #686868;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+
+
+/*BOTÃO de CADASTRO*/
+.cadastro button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 70px;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #005C6E;
+    border-radius: 5px;
+    color: #005C6E;
+    font-weight: bold;
+
+}
+
+
+
+/*VISUALIZAÇÃO DE TEMAS dos Projetos Interdisciplinares anteriores*/
+.projetos{
+    background-color: #EAEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.projetos h1{
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 25px;
+    justify-self: center;
+    max-width: 45%;
+    border-top: 2px solid #931914;
+    color: #005C6E;
+    font-size: 1.2em;
+
+}
+
+.projetos h2{
+    color: #005C6E;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+
+/*Container BANNER / DESCRIÇÃO dos TEMAS / REPOSITÓRIO*/
+.temas{
+    width: 75%;
+    padding-bottom: 100px;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+
+
+/*Container BANNER*/
+.temas .banner{
+    background-color: #005C6E;
+    border-radius: 10px 0px 0px 10px;
+    width: 20%;
+    
+}
+
+.temas .banner img{
+    width: 100%;
+    margin: auto;
+    max-width: 40%;
+
+}
+
+
+
+/*Container DESCRIÇÃO dos TEMAS*/
+.temas .descricao{
+    background-color: #fff;
+    display: grid;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.temas .descricao h3{
+    color: #005C6E;
+    padding-top: 5px;
+}
+
+
+
+/*Container REPOSITÓRIO*/
+.temas .github{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+    width: 20%;
+    background-color: #005C6E;
+
+    
+}
+
+.temas .github a{
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.temas .github img{
+    padding: 10%;
+    max-width: 40%;
+    margin: auto;
+}
+
+
+/*RODAPÉ*/
+.rodape{
+    background-color: #931914;
+    height: 50px;
+}
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 650px){
+    .banner{
+        display: none;
+        width: 0%;
+    }
+
+    .github{
+        width: 40%;
+    }
+    
+    .github p{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    .github p{
+        display: none;
+    }
+}
