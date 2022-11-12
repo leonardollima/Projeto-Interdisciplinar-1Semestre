@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/temas.css">
     <link rel="shortcut icon" href="imagens/logo-cps.png" type="image/x-icon">
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <li><a href="#rodape" accesskey="2" title="Ir para o menu de navegação">Ir para o rodapé[2]</a></li>
             </ul>
             <ul class="links_access">
-                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="paginas/acessibilidade.html">Acessibilidade</a></li>
                 <li><a href="javascript:void(0);" id="contraste">Alto Contraste</a></li>
                 <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
                 <li><a href="javascript:void(0);" id="diminui">A-</a></li>
@@ -252,6 +253,15 @@
         </div>
     
     </footer>
-
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>

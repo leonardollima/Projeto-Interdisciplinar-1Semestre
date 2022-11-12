@@ -1,0 +1,41 @@
+#conteudo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#conteudo p{
+    line-height: 40px;
+}
+
+.conteudo-acessibilidade{
+    width: 90%;
+    text-align: left;
+    
+}
+
+.conteudo-acessibilidade h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #931914;
+    color: #005C6E;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+
+.conteudo-libras{
+    text-align: left;
+    background-color: #EAEDED;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333333;
+}

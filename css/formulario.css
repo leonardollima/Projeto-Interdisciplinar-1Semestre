@@ -1,0 +1,104 @@
+/*DESCRIÇÃO*/
+.descricao{
+    margin-bottom: 50px;
+}
+
+.descricao h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #931914;
+    color: #005C6E;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.descricao p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #333333;
+    
+}
+
+
+
+
+
+
+
+
+
+.fsProfInter{
+    padding: 4%;
+}
+
+.legenda {
+    color: #005C6E;
+    font-weight: bold;
+    font-family: 'Open Sans', serif;
+}
+
+#formulario {
+    justify-content: center;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#formulario label{
+    color: #005C6E;
+    
+}
+
+#formulario input{
+    padding: 10px;
+    border-radius: 15px;
+    height: 1px;
+    width: 40%;
+    
+}
+
+.formPT1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fieldset_esquerdo {
+    width: 45%;
+    height: 470px;
+    float: left;
+}
+
+.fieldset_direito {
+    width: 45%;
+    height: 470px;
+    float: right    ;
+}
+
+.cima input{
+    display: block;
+}
+
+.divresponsividade1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.labelMA {
+    font-size: 15px;
+}
+
+.labelME {
+    font-size: 12px;
+}
+
+/* manipulacao do tamanho de cada um pelo id */
+
+input.divresponsividade1  {
+    width: 5%;
+}
