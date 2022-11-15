@@ -36,15 +36,14 @@
 
 /*IMAGEM DO EVENTO*/
 .imagem-evento{
-    text-align: center;
-    border: 10px solid #005C6E;
-    margin-top: 45px;
-    margin-bottom: 20px;
-    width: 30%;
+    /*text-align: center;*/
+    border: 6px solid #005C6E;
+    margin: 45px 0px 20px 0px;
+    max-width: 90%;
 }
 
 .imagem-evento img{
-    width: 80%;
+    width: 100%;
     
 }
 

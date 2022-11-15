@@ -25,80 +25,155 @@
 }
 
 
+/*FORMULARIO*/
 
-
-
-
-
-
-
-.fsProfInter{
-    padding: 4%;
+.formulario{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    /*background-color: aqua;*/
+    margin-bottom: 50px;
 }
 
-.legenda {
+#formulario_projeto {
+    width: 100%;
+}
+
+.fieldset_projeto_interdiciplinar{
+    border-radius: 10px;
+}
+
+.legenda{
+    margin-left: 20px;
     color: #005C6E;
-    font-weight: bold;
-    font-family: 'Open Sans', serif;
+    font-weight: bolder;
 }
 
-#formulario {
-    justify-content: center;
-    display: inline-block;
-    margin-left: 10%;
-    margin-right: 10%;
+.formulario_projeto_informacoes{
+    width: 96%;
+    margin:auto;
 }
 
-#formulario label{
+#formulario_projeto label{
     color: #005C6E;
     
 }
 
-#formulario input{
-    padding: 10px;
-    border-radius: 15px;
-    height: 1px;
-    width: 40%;
-    
+#formulario_projeto input{
+    margin: 10px 0px;
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #005C6E;
+    width: 90%;  
+    background-color: #F4F4F4;
 }
 
-.formPT1 {
-    width: 100%;
-    margin-bottom: 20px;
+.div_superior{
+    display: flex;
+    margin-top: 20px;
 }
 
-.fieldset_esquerdo {
-    width: 45%;
-    height: 470px;
-    float: left;
+
+.div_superior_esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-.fieldset_direito {
-    width: 45%;
-    height: 470px;
-    float: right    ;
+.div_superior_direita{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
-.cima input{
-    display: block;
+#ra{
+    max-width: 150px;
 }
 
-.divresponsividade1 {
-    width: 100%;
+.div_inferior{
+    display: flex;
+}
+
+.inferiror_esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+select{
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #005C6E;
+    background-color: #F4F4F4;
+}
+
+#curso{
+    width: 90%;
+}
+
+.inferior_central{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#periodo{
+    width: 60%;
+}
+
+.inferior_direita{
+    width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-.labelMA {
-    font-size: 15px;
+
+.div_upload{
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.labelME {
-    font-size: 12px;
+.fieldset_esquerdo{
+    width: 44.8%;
+    border-radius: 10px;
 }
 
-/* manipulacao do tamanho de cada um pelo id */
 
-input.divresponsividade1  {
-    width: 5%;
+
+.integrantes {
+    width: 95%;
+    margin: auto;
+    display: flex;
 }
+
+.labelME{
+    margin: 0px 10px;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fieldset_direito{
+    width: 49.5%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+

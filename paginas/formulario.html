@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -81,132 +81,164 @@
         </header>
     </section>
 
-    <section>
-        <form action="" method="post" name="contato" id="formulario">
-            <fieldset class="fsProfInter">
+    <section class="formulario" >
+        <form action="" method="post" name="contato" id="formulario_projeto">
+
+            <fieldset class="fieldset_projeto_interdiciplinar">
                 <legend class="legenda">Projeto Interdisciplinar</legend>
 
-                <div class="formPT1">
-                    <!-- div com parte de cima do form ate os select boxs -->
-                    <div class="divresponsividade1 cima">
-                        <!-- div so com os labels e inputs do nome e RA pra fazer mais facil a responsividade -->
-                        <label class="required labelMA" for="nome">Nome</label>
-                        <input type="text" name="nome" id="nomesss" required>
+                <div class="formulario_projeto_informacoes">
 
-                        <label for="ra" class="required labelMA">R.A.</label>
-                        <input type="text" name="ra" id="ra" placeholder="SLA" required>
+                    <div class="div_superior">
+
+                        <div class="div_superior_esquerda">
+                            <label class="required labelMA" for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        
+                        <div class="div_superior_direita">
+                            <label for="ra" class="required labelMA">R.A</label>
+                            <input type="text" name="ra" id="ra" required>
+                        </div>
+                        
                     </div>
 
-                    <div class="divresponsividade1 baixo">
-                        <!-- div com o curso, periodo e semestre pra facilitar a responsividade -->
-                        <label for="curso" class="required labelMA">Curso</label>
-                        <select name="curso" id="curso" required>
-                            <option value="" selected disabled>Selecione um curso</option>
-                            <option value="ads">Análise e desenvolvimento de sistemas</option>
-                            <option value="comex">Comércio exterior</option>
-                            <option value="dpp">Desenvolvimento de produtos plasticos</option>
-                            <option value="dms">Desenvolvimento de software em multiplataforma</option>
-                            <option value="ge">Gestão empresarial</option>
-                            <option value="rh">Gestão de recursos humanos</option>
-                            <option value="log">Logística</option>
-                            <option value="pol">Polímeros</option>
-                        </select>
+                    <div class="div_inferior">
+                        
+                        <div class="inferiror_esquerda">
+                            <label for="curso" class="required labelMA">Curso</label>
+                            <select name="curso" id="curso" required>
+                                <option value="" selected disabled></option>
+                                <option value="ads">Análise e desenvolvimento de sistemas</option>
+                                <option value="comex">Comércio exterior</option>
+                                <option value="dpp">Desenvolvimento de produtos plasticos</option>
+                                <option value="dms">Desenvolvimento de software em multiplataforma</option>
+                                <option value="ge">Gestão empresarial</option>
+                                <option value="rh">Gestão de recursos humanos</option>
+                                <option value="log">Logística</option>
+                                <option value="pol">Polímeros</option>
+                            </select>
+                        </div>
+                       
+                        <div class="inferior_central">
+                            <label for="periodo" class="required labelMA">Periodo</label>
+                            <select name="periodo" id="periodo" required>
+                                <option value="" selected disabled></option>
+                                <option value="per1">1 Periodo</option>
+                                <option value="per2">2 Periodo</option>
+                                <option value="per3">3 Periodo</option>
+                                <option value="per4">4 Periodo</option>
+                                <option value="per5">5 Periodo</option>
+                                <option value="per6">6 Periodo</option>
+                                <option value="per7">7 Periodo</option>
+                                <option value="per8">8 Periodo</option>
+                            </select>
+                        </div>
 
-                        <label for="periodo" class="required labelMA">Periodo</label>
-                        <select name="periodo" id="periodo" required>
-                            <option value="" selected disabled>Selecione um periodo</option>
-                            <option value="per1">1 Periodo</option>
-                            <option value="per2">2 Periodo</option>
-                            <option value="per3">3 Periodo</option>
-                            <option value="per4">4 Periodo</option>
-                            <option value="per5">5 Periodo</option>
-                            <option value="per6">6 Periodo</option>
-                            <option value="per7">7 Periodo</option>
-                            <option value="per8">8 Periodo</option>
-                        </select>
+                        <div class="inferior_direita">
+                            <label for="semestre" class="required labelMA">Semestre</label>
+                            <select name="semestre" id="semestre" required>
+                                <option value="" selected disabled></option>
+                                <option value="sem1">1 Semestre</option>
+                                <option value="sem2">2 Semestre</option>
+                                <option value="sem3">3 Semestre</option>
+                                <option value="sem4">4 Semestre</option>
+                                <option value="sem5">5 Semestre</option>
+                                <option value="sem6">6 Semestre</option>
+                                <option value="sem7">7 Semestre</option>
+                                <option value="sem8">8 Semestre</option>
+                            </select>
+                        </div>
 
-                        <label for="semestre" class="required labelMA">Semestre</label>
-                        <select name="semestre" id="semestre" required>
-                            <option value="" selected disabled>Selecione um semestre</option>
-                            <option value="sem1">1 Semestre</option>
-                            <option value="sem2">2 Semestre</option>
-                            <option value="sem3">3 Semestre</option>
-                            <option value="sem4">4 Semestre</option>
-                            <option value="sem5">5 Semestre</option>
-                            <option value="sem6">6 Semestre</option>
-                            <option value="sem7">7 Semestre</option>
-                            <option value="sem8">8 Semestre</option>
-                        </select>
                     </div>
+
                 </div>
 
 
-                <fieldset class="fieldset_esquerdo">
-                    <!-- fieldset q fica na esquerda (integrantes do grupo) -->
-                    <legend class="legenda">Integrantes Grupo</legend>
 
-                    <div class="divresponsividade1">
-                        <!-- div de cada integrante pra facilitar na responsividade -->
-                        <label for="nomegr" class="labelME">Nome:</label>
-                        <input type="text" name="nomegr" placeholder="Nome integrante 1" required>
-                        <label for="ragr" class="labelME">R.A.:</label>
-                        <input type="text" name="ragr" placeholder="RA integrante 1" required>
-                    </div>
-                    <div class="divresponsividade1">
-                        <label for="nomegr" class="labelME">Nome:</label>
-                        <input type="text" name="nomegr" placeholder="Nome integrante 2" required>
-                        <label for="ragr" class="labelME">R.A.:</label>
-                        <input type="text" name="ragr" placeholder="RA integrante 2" required>
-                    </div>
-                    <div class="divresponsividade1">
-                        <label for="nomegr" class="labelME">Nome:</label>
-                        <input type="text" name="nomegr" placeholder="Nome integrante 3" required>
-                        <label for="ragr" class="labelME">R.A.:</label>
-                        <input type="text" name="ragr" placeholder="RA integrante 3" required>
-                    </div>
-                    <div class="divresponsividade1">
-                        <label for="nomegr" class="labelME">Nome:</label>
-                        <input type="text" name="nomegr" placeholder="Nome integrante 4" required>
-                        <label for="ragr" class="labelME">R.A.:</label>
-                        <input type="text" name="ragr" placeholder="RA integrante 4" required>
-                    </div>
-                    <div class="divresponsividade1">
-                        <label for="nomegr" class="labelME">Nome:</label>
-                        <input type="text" name="nomegr" placeholder="Nome integrante 5" required>
-                        <label for="ragr" class="labelME">R.A.:</label>
-                        <input type="text" name="ragr" placeholder="RA integrante 5" required>
-                    </div>
+                <div class="div_upload">
 
-
-                </fieldset>
-                <fieldset class="fieldset_direito">
-                    <!-- fieldset q fica na direita (projeto) -->
-                    <legend class="legenda">Projeto</legend>
-
-                    <label for="tema" class="labelME">Tema</label>
-                    <input type="text" name="tema" id="tema" placeholder="Tema do projeto" required><br>
-
-                    <label for="github" class="labelME">Github</label>
-                    <input type="text" name="github" id="github" placeholder="Github do projeto" required><br>
-
-                    <label for="descricao" class="labelME">Descricao</label>
-                    <textarea name="descricao" id="descricao" cols="20" rows="10"></textarea>
-
-                    <div>
-                        <!-- fiz essa div pra facilitar na responsividade quando for fazer, a ideia e fazer ela ficar no canto direito em baixo -->
-                        <img class="imagem_rodape" src="../imagens/Logo Cps-Rodape.png"
-                            alt="Logo da Fatec Zona leste em Branco">
-                        <label class="required" for="banner" class="labelME">Banner</label>
-                        <input type="text" name="banner" id="banner" placeholder="" required>
-
-                        <div class="bott">
-                            <button type="reset">Limpar</button>
-                            <button type="submit">Carregar Imagem</button>
+                    <fieldset class="fieldset_esquerdo">
+                        <!-- fieldset q fica na esquerda (integrantes do grupo) -->
+                        <legend class="legenda">Integrantes Grupo</legend>
+    
+                        <div class="integrantes">
+                            <!-- div de cada integrante pra facilitar na responsividade -->
+                            <label for="nomegr" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" required>
+                            <label for="ragr" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr"  required>
                         </div>
-                    </div>
+                        <div class="integrantes">
+                            <label for="nomegr" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr"  required>
+                            <label for="ragr" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr"  required>
+                        </div>
+                        <div class="integrantes">
+                            <label for="nomegr" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr"  required>
+                            <label for="ragr" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr"  required>
+                        </div>
+                        <div class="integrantes">
+                            <label for="nomegr" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" required>
+                            <label for="ragr" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr"  required>
+                        </div>
+                        <div class="integrantes">
+                            <label for="nomegr" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr"  required>
+                            <label for="ragr" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" required>
+                        </div>
+    
+                    </fieldset>
+    
+                    <fieldset class="fieldset_direito">
+                        <!-- fieldset q fica na direita (projeto) -->
+                        <legend class="legenda">Projeto</legend>
+    
+                        <label for="tema" class="labelME">Tema</label>
+                        <input type="text" name="tema" id="tema"  required><br>
+    
+                        <label for="github" class="labelME">Github</label>
+                        <input type="text" name="github" id="github"  required><br>
+    
+                        <label for="descricao" class="labelME">Descricao</label>
+                        <textarea name="descricao" id="descricao" cols="20" rows="10"></textarea>
+    
+                        <div>
+                            <!-- fiz essa div pra facilitar na responsividade quando for fazer, a ideia e fazer ela ficar no canto direito em baixo -->
+                            <img class="imagem_rodape" src="../imagens/Logo Cps-Rodape.png"
+                                alt="Logo da Fatec Zona leste em Branco">
+                            <label class="required" for="banner" class="labelME">Banner</label>
+                            <input type="text" name="banner" id="banner" placeholder="" required>
+    
+                            <div class="bott">
+                                <button type="reset">Limpar</button>
+                                <button type="submit">Carregar Imagem</button>
+                            </div>
+                        </div>
+    
+                    </fieldset>
 
-                </fieldset>
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
             </fieldset>
+
         </form>
     </section>
 
@@ -303,8 +335,6 @@
         </div>
 
     </footer>
-
-
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
