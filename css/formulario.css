@@ -87,14 +87,14 @@
 }
 
 #ra{
-    max-width: 150px;
+    max-width: 36%;
 }
 
 .div_inferior{
     display: flex;
 }
 
-.inferiror_esquerda{
+.inferior_esquerda{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -118,7 +118,7 @@ select{
 }
 
 #periodo{
-    width: 60%;
+    width: 90%;
 }
 
 .inferior_direita{
@@ -141,11 +141,10 @@ select{
     border-radius: 10px;
 }
 
-
-
 .integrantes {
     width: 95%;
     margin: auto;
+    padding: 5px 0px;
     display: flex;
 }
 
@@ -154,23 +153,249 @@ select{
     align-self: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .fieldset_direito{
     width: 49.5%;
     border-radius: 10px;
 }
 
+
+.projeto-input{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.projeto-informacoes{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.projeto-descricao{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    
+}
+
+.projeto-banner{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.imagem-banner{
+    width: 35%;
+}
+
+
+.labelMD{
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+#descricao{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 7px;
+    border: 1px solid #005C6E;
+}
+
+.titulo-banner{
+    width: 100%;
+    margin: auto;
+}
+
+
+.btn-banner{
+    display: flex;
+      
+}
+
+#banner-limpar{
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #747474;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#banner-carregar{
+    padding: 5px;
+    background-color: #2BB8C9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 45%;
+}
+
+
+
+.btn-projeto{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn-formulario{
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 30px;
+    margin: 30px 10px;
+    
+}
+
+#projeto-enviar{
+    background-color: #2BB8C9;
+}
+
+#projeto-limpar{
+    background-color: #747474;
+}
+
+
+
+
+@media screen and (max-width: 1410px){
+    #formulario_projeto input{
+        width: 100%;
+    }
+
+
+    .div_superior{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .div_superior_esquerda{
+        width: 90%;
+        margin: auto;
+    }
+
+    .div_superior_direita{
+        width: 90%;
+        margin: auto;
+    }
+
+    #ra{
+        max-width: 100%;
+    }
+
+    .div_inferior{
+        flex-direction: column;
+        
+    }
+
+    .inferior_esquerda{
+        width: 90%;
+        margin: auto;
+    }
+
+    #curso{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .inferior_central{
+        width: 90%;
+        margin: auto;
+    }
+
+    #periodo{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .inferior_direita{
+        width: 90%;
+        margin: auto;
+
+    }
+
+    #semestre{
+        margin: 10px 0px;
+    }
+    
+    .div_upload{
+        flex-direction: column;
+        
+    }
+
+    .fieldset_esquerdo{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .fieldset_direito{
+        width: 90%;
+        margin: auto;
+    }
+
+    #banner{
+        max-width: 90%;
+    }
+
+    .btn-banner{
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .formulario{
+        width: 90%;
+    }
+
+
+    .projeto-input{
+        flex-direction: column;
+    }
+
+    .integrantes{
+        flex-direction: column;
+    }
+
+    .labelME{
+        align-self: flex-start;
+    }
+
+
+    .projeto-informacoes{
+        flex-direction: column;
+    }
+
+    
+    .projeto-descricao{
+        width: 100%;
+    }
+
+
+    .projeto-banner{
+        width: 80%;
+        margin: auto;
+        
+    }
+
+    #banner{
+        max-width: 100%;
+    }
+
+    .btn-banner{
+        margin: 10px 0px;
+    }
+
+    
+}
 
 
 

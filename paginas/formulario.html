@@ -81,8 +81,8 @@
         </header>
     </section>
 
-    <section class="formulario" >
-        <form action="" method="post" name="contato" id="formulario_projeto">
+    <div class="formulario">
+        <form action="javascript:void(0);" method="post" name="contato" id="formulario_projeto">
 
             <fieldset class="fieldset_projeto_interdiciplinar">
                 <legend class="legenda">Projeto Interdisciplinar</legend>
@@ -105,10 +105,10 @@
 
                     <div class="div_inferior">
                         
-                        <div class="inferiror_esquerda">
+                        <div class="inferior_esquerda">
                             <label for="curso" class="required labelMA">Curso</label>
                             <select name="curso" id="curso" required>
-                                <option value="" selected disabled></option>
+                                <option value="" selected disabled>...</option>
                                 <option value="ads">Análise e desenvolvimento de sistemas</option>
                                 <option value="comex">Comércio exterior</option>
                                 <option value="dpp">Desenvolvimento de produtos plasticos</option>
@@ -123,7 +123,7 @@
                         <div class="inferior_central">
                             <label for="periodo" class="required labelMA">Periodo</label>
                             <select name="periodo" id="periodo" required>
-                                <option value="" selected disabled></option>
+                                <option value="" selected disabled>...</option>
                                 <option value="per1">1 Periodo</option>
                                 <option value="per2">2 Periodo</option>
                                 <option value="per3">3 Periodo</option>
@@ -138,7 +138,7 @@
                         <div class="inferior_direita">
                             <label for="semestre" class="required labelMA">Semestre</label>
                             <select name="semestre" id="semestre" required>
-                                <option value="" selected disabled></option>
+                                <option value="" selected disabled>...</option>
                                 <option value="sem1">1 Semestre</option>
                                 <option value="sem2">2 Semestre</option>
                                 <option value="sem3">3 Semestre</option>
@@ -164,34 +164,40 @@
     
                         <div class="integrantes">
                             <!-- div de cada integrante pra facilitar na responsividade -->
-                            <label for="nomegr" class="labelME">Nome:</label>
-                            <input type="text" name="nomegr" required>
-                            <label for="ragr" class="labelME">R.A.:</label>
-                            <input type="text" name="ragr"  required>
+                            <label for="nomegr1" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr1" required>
+                            <label for="ragr1" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr1"  required>
                         </div>
                         <div class="integrantes">
-                            <label for="nomegr" class="labelME">Nome:</label>
-                            <input type="text" name="nomegr"  required>
-                            <label for="ragr" class="labelME">R.A.:</label>
-                            <input type="text" name="ragr"  required>
+                            <label for="nomegr2" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr2" required>
+                            <label for="ragr2" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr2" required>
                         </div>
                         <div class="integrantes">
-                            <label for="nomegr" class="labelME">Nome:</label>
-                            <input type="text" name="nomegr"  required>
-                            <label for="ragr" class="labelME">R.A.:</label>
-                            <input type="text" name="ragr"  required>
+                            <label for="nomegr3" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr3" required>
+                            <label for="ragr3" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr3" required>
                         </div>
                         <div class="integrantes">
-                            <label for="nomegr" class="labelME">Nome:</label>
-                            <input type="text" name="nomegr" required>
-                            <label for="ragr" class="labelME">R.A.:</label>
-                            <input type="text" name="ragr"  required>
+                            <label for="nomegr4" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr4" required>
+                            <label for="ragr4" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr4" required>
                         </div>
                         <div class="integrantes">
-                            <label for="nomegr" class="labelME">Nome:</label>
-                            <input type="text" name="nomegr"  required>
-                            <label for="ragr" class="labelME">R.A.:</label>
-                            <input type="text" name="ragr" required>
+                            <label for="nomegr5" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr5" required>
+                            <label for="ragr5" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr5" required>
+                        </div>
+                        <div class="integrantes">
+                            <label for="nomegr6" class="labelME">Nome:</label>
+                            <input type="text" name="nomegr" id="nomegr6" required>
+                            <label for="ragr6" class="labelME">R.A.:</label>
+                            <input type="text" name="ragr" id="ragr6" required>
                         </div>
     
                     </fieldset>
@@ -199,48 +205,56 @@
                     <fieldset class="fieldset_direito">
                         <!-- fieldset q fica na direita (projeto) -->
                         <legend class="legenda">Projeto</legend>
-    
-                        <label for="tema" class="labelME">Tema</label>
-                        <input type="text" name="tema" id="tema"  required><br>
-    
-                        <label for="github" class="labelME">Github</label>
-                        <input type="text" name="github" id="github"  required><br>
-    
-                        <label for="descricao" class="labelME">Descricao</label>
-                        <textarea name="descricao" id="descricao" cols="20" rows="10"></textarea>
-    
-                        <div>
-                            <!-- fiz essa div pra facilitar na responsividade quando for fazer, a ideia e fazer ela ficar no canto direito em baixo -->
-                            <img class="imagem_rodape" src="../imagens/Logo Cps-Rodape.png"
-                                alt="Logo da Fatec Zona leste em Branco">
-                            <label class="required" for="banner" class="labelME">Banner</label>
-                            <input type="text" name="banner" id="banner" placeholder="" required>
-    
-                            <div class="bott">
-                                <button type="reset">Limpar</button>
-                                <button type="submit">Carregar Imagem</button>
+                        
+                        <div class="projeto-input">
+                            <label for="tema" class="labelME">Tema</label>
+                            <input type="text" name="tema" id="tema"  required>
+                        </div>
+                        
+                        <div class="projeto-input">
+                            <label for="github" class="labelME">Github</label>
+                            <input type="text" name="github" id="github"  required><br>
+                        </div>
+                        
+
+
+                        <div class="projeto-informacoes">
+                            <div class="projeto-descricao">
+                                <label for="descricao" class="labelMD">Descritivo</label>
+                                <textarea name="descricao" id="descricao" cols="20" rows="10"></textarea>
+                            </div>
+                            
+                            <div class="projeto-banner">
+                                <!-- fiz essa div pra facilitar na responsividade quando for fazer, a ideia e fazer ela ficar no canto direito em baixo -->
+                                <img class="imagem-banner" src="../imagens/Icon-Banner-2.png"
+                                    alt="Logo da Fatec Zona leste em Branco">
+
+                                <div class="titulo-banner">
+                                    <label class="required labelMD" for="banner">Banner</label>
+                                    <input type="text" name="banner" id="banner" placeholder="" required>
+                                </div>
+                                
+                                <div class="btn-banner">
+                                    <button id="banner-limpar" type="reset">Limpar</button>
+                                    <button id="banner-carregar" type="submit">Carregar Arquivo</button>
+                                </div>
                             </div>
                         </div>
     
                     </fieldset>
 
                 </div>
-                
 
-
-
-
-
-
-
-
-
-
+                <div class="btn-projeto">
+                    <button class="btn-formulario" id="projeto-enviar" type="submit">Enviar</button>
+                    <button class="btn-formulario" id="projeto-limpar" type="reset">Limpar</button>
+                    
+                </div>
 
             </fieldset>
 
         </form>
-    </section>
+    </div>
 
     <!--RODAPÉ-->
     <footer class="rodape" id="rodape">
@@ -336,7 +350,7 @@
 
     </footer>
 
-    <div vw class="enabled">
+    <!--<div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
             <div class="vw-plugin-top-wrapper"></div>
@@ -345,7 +359,7 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+    </script>-->
 </body>
 
 </html>
