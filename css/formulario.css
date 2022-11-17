@@ -25,33 +25,20 @@
 }
 
 
-/*FORMULARIO*/
 
+/*ESPAÇO do FORMULARIO*/
 .formulario{
     display: flex;
     width: 70%;
     margin: auto;
-    /*background-color: aqua;*/
     margin-bottom: 50px;
 }
 
+
+
+/*FORMULÁRIO*/
 #formulario_projeto {
     width: 100%;
-}
-
-.fieldset_projeto_interdiciplinar{
-    border-radius: 10px;
-}
-
-.legenda{
-    margin-left: 20px;
-    color: #005C6E;
-    font-weight: bolder;
-}
-
-.formulario_projeto_informacoes{
-    width: 96%;
-    margin:auto;
 }
 
 #formulario_projeto label{
@@ -68,18 +55,47 @@
     background-color: #F4F4F4;
 }
 
+
+
+/*FIELDSET - PROJETO INTERDISCIPLINAR*/
+.fieldset_projeto_interdiciplinar{
+    border-radius: 10px;
+}
+
+.legenda{
+    margin-left: 20px;
+    color: #005C6E;
+    font-weight: bolder;
+}
+
+
+
+/*NOME / R.A / CURSO / PERÍODO / SEMESRE - PROJETO INTERDISCIPLINAR*/
+.formulario_projeto_informacoes{
+    width: 96%;
+    margin:auto;
+}
+
+
+
+/*NOME / R.A - PROJETO INTERDISCIPLINAR*/
 .div_superior{
     display: flex;
     margin-top: 20px;
 }
 
 
+
+/*NOME - PROJETO INTERDISCIPLINAR*/
 .div_superior_esquerda{
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
+
+
+/*R.A - PROJETO INTERDISCIPLINAR*/
 .div_superior_direita{
     display: flex;
     flex-direction: column;
@@ -90,14 +106,11 @@
     max-width: 36%;
 }
 
+
+
+/*CURSO / PERÍODO / SEMESTRE - PROJETO INTERDISCIPLINAR*/
 .div_inferior{
     display: flex;
-}
-
-.inferior_esquerda{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
 }
 
 select{
@@ -107,10 +120,22 @@ select{
     background-color: #F4F4F4;
 }
 
+
+
+/*CURSO*/
+.inferior_esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 #curso{
     width: 90%;
 }
 
+
+
+/*PERÍODO*/
 .inferior_central{
     display: flex;
     flex-direction: column;
@@ -121,6 +146,9 @@ select{
     width: 90%;
 }
 
+
+
+/*SEMESTRE*/
 .inferior_direita{
     width: 30%;
     display: flex;
@@ -128,6 +156,8 @@ select{
 }
 
 
+
+/*INTEGRANTES GRUPO e PROJETO*/
 .div_upload{
     width: 96%;
     margin: auto;
@@ -136,6 +166,9 @@ select{
     justify-content: space-between;
 }
 
+
+
+/*FIELDSET - INTEGRANTES GRUPO*/
 .fieldset_esquerdo{
     width: 44.8%;
     border-radius: 10px;
@@ -153,48 +186,45 @@ select{
     align-self: center;
 }
 
+
+
+/*FIELDSET - PROJETO*/
 .fieldset_direito{
     width: 49.5%;
     border-radius: 10px;
 }
 
 
+
+/*TEMA e GITHUB - PROJETO*/
 .projeto-input{
     display: flex;
     width: 90%;
     margin: auto;
-    
 }
 
+
+
+/*DESCRITIVO e BANNER*/
 .projeto-informacoes{
     display: flex;
     width: 100%;
     margin-top: 20px;
-    
 }
 
+.labelMD{
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+
+
+/*DESCRITIVO*/
 .projeto-descricao{
     display: flex;
     flex-direction: column;
     width: 50%;
     text-align: left;
-    
-}
-
-.projeto-banner{
-    width: 50%;
-    margin: auto;
-    
-}
-
-.imagem-banner{
-    width: 35%;
-}
-
-
-.labelMD{
-    padding-left: 30px;
-    padding-bottom: 2px;
 }
 
 #descricao{
@@ -206,17 +236,39 @@ select{
     border: 1px solid #005C6E;
 }
 
+
+
+/*IMAGEM e BANNER*/
+.projeto-banner{
+    width: 50%;
+    margin: auto;    
+}
+
+
+
+/*IMAGEM*/
+.imagem-banner{
+    width: 35%;
+}
+
+
+
+/*BANNER*/
 .titulo-banner{
     width: 100%;
     margin: auto;
 }
 
 
+
+/*BOTÕES de UPLOAD de IMAGEM*/
 .btn-banner{
     display: flex;
-      
 }
 
+
+
+/*BOTÃO de LIMPAR de IMAGEM*/
 #banner-limpar{
     padding: 5px;
     margin-right: 10px;
@@ -227,6 +279,9 @@ select{
     width: 45%;
 }
 
+
+
+/*BOTÃO de CARREGAR IMAGEM*/
 #banner-carregar{
     padding: 5px;
     background-color: #2BB8C9;
@@ -238,10 +293,10 @@ select{
 
 
 
+/*BOTÕES de ENVIO de FORMULÁRIO*/
 .btn-projeto{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .btn-formulario{
@@ -250,38 +305,52 @@ select{
     border-radius: 5px;
     border: none;
     padding: 5px 30px;
-    margin: 30px 10px;
-    
+    margin: 30px 10px; 
 }
 
+
+
+/*BOTÃO de ENVIAR o FORMULÁRIO*/
 #projeto-enviar{
     background-color: #2BB8C9;
 }
 
+
+
+/*BOTÃO de LIMPAR o FORMULÁRIO*/
 #projeto-limpar{
     background-color: #747474;
 }
 
 
 
-
+/*RESPONSIVIDADE - FORMLÁRIO*/
 @media screen and (max-width: 1410px){
+    /*FORMULÁRIO*/
     #formulario_projeto input{
         width: 100%;
     }
 
 
+
+    /*NOME / R.A - PROJETO INTERDISCIPLINAR*/
     .div_superior{
         flex-direction: column;
         margin: auto;
         width: 100%;
     }
 
+
+
+    /*NOME - PROJETO INTERDISCIPLINAR*/
     .div_superior_esquerda{
         width: 90%;
         margin: auto;
     }
 
+
+
+    /*R.A - PROJETO INTERDISCIPLINAR*/
     .div_superior_direita{
         width: 90%;
         margin: auto;
@@ -291,11 +360,16 @@ select{
         max-width: 100%;
     }
 
+
+
+    /*CURSO / PERÍODO / SEMESTRE - PROJETO INTERDISCIPLINAR*/
     .div_inferior{
-        flex-direction: column;
-        
+        flex-direction: column;  
     }
 
+
+
+    /*CURSO*/
     .inferior_esquerda{
         width: 90%;
         margin: auto;
@@ -306,6 +380,9 @@ select{
         margin: 10px 0px;
     }
 
+
+
+    /*PERÍODO*/
     .inferior_central{
         width: 90%;
         margin: auto;
@@ -316,51 +393,68 @@ select{
         margin: 10px 0px;
     }
 
+
+
+    /*SEMESTRE*/
     .inferior_direita{
         width: 90%;
         margin: auto;
-
     }
 
     #semestre{
         margin: 10px 0px;
     }
     
+
+
+    /*INTEGRANTES GRUPO e PROJETO*/
     .div_upload{
-        flex-direction: column;
-        
+        flex-direction: column;       
     }
 
+
+
+    /*FIELDSET - INTEGRANTES GRUPO*/
     .fieldset_esquerdo{
         width: 90%;
         margin: auto;
         margin-bottom: 20px;
     }
 
+
+
+    /*FIELDSET - PROJETO*/
     .fieldset_direito{
         width: 90%;
         margin: auto;
     }
 
+
+
+    /*BANNER*/
     #banner{
         max-width: 90%;
     }
 
+
+
+    /*BOTÕES de UPLOAD de IMAGEM*/
     .btn-banner{
         margin: 10px 0px;
     }
 }
 
+
+
 @media screen and (max-width: 800px){
+    /*ESPAÇO do FORMULARIO*/
     .formulario{
         width: 90%;
     }
 
 
-    .projeto-input{
-        flex-direction: column;
-    }
 
+    /*FIELDSET - INTEGRANTES GRUPO*/
     .integrantes{
         flex-direction: column;
     }
@@ -370,31 +464,49 @@ select{
     }
 
 
+
+    /*TEMA e GITHUB - PROJETO*/
+    .projeto-input{
+        flex-direction: column;
+
+    }
+
+
+
+    /*DESCRITIVO e BANNER*/
     .projeto-informacoes{
         flex-direction: column;
     }
 
-    
+
+
+    /*DESCRITIVO*/
     .projeto-descricao{
         width: 100%;
     }
 
 
+
+    /*IMAGEM e BANNER*/
     .projeto-banner{
         width: 80%;
         margin: auto;
         
     }
 
+
+
+    /*BANNER*/
     #banner{
         max-width: 100%;
     }
 
+
+
+    /*BOTÕES de UPLOAD de IMAGEM*/
     .btn-banner{
         margin: 10px 0px;
     }
-
-    
 }
 
 
