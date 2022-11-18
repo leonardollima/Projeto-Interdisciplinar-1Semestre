@@ -1,0 +1,226 @@
+.informativos{
+    flex-direction: column;
+}
+
+
+/*DESCRIÇÃO*/
+.descricao{
+    margin-bottom: 50px;
+}
+
+.descricao h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #931914;
+    color: #005C6E;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.descricao p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #333333;
+    
+}
+
+
+
+/*QUADROS de EVENTOS*/
+.info-eventos{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.quadros{
+    width: 21%;
+    background-color: #fff;
+    border: none;
+    border-top: 9px solid #931914;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.199);
+    
+}
+
+.quadros h2{
+    color: #005C6E;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.quadros p{
+    font-size: 0.7em;
+}
+
+#observacao{
+    color: #931914;
+    font-size: 0.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quadros button{
+    padding: 5px 35px;
+    background-color: #fff;
+    color: #747474;
+    border: 2px solid #747474;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+
+
+/*QUADROS de PRÓXIMOS EVENTOS*/
+.infodata{
+    display: flex;
+    margin: auto;
+    margin-bottom: 5px;
+    max-width: 60%;
+    justify-content: center;     
+}
+
+
+
+/*Container DATA*/
+.infodata .data{
+    width: 30%;
+    padding: 15px 0px;
+    background-color: #005C6E;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infodata .data p{
+    margin: auto;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+/*Container INFORMATIVO*/
+.infodata .info{
+    width: 70%;
+    background-color: #EAEDED;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 0px;
+}
+
+.infodata .info p{
+    color: #686868;
+    text-align: left;
+    padding: 0px 10px;
+    font-size: 0.9em;
+}
+
+
+
+/*QUADROS de CURSOS EXTRACURRICULARES*/
+.cursos-extracurriculares{
+    background-color: #EAEDED;
+}
+
+
+.cursos{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.quadros-cursos{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.imagem-curso{
+    background-color: #005C6E;
+    width: 30%;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+
+.info-curso{
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px;
+    color: #005C6E;
+    background-color: #fff;
+    width: 70%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.info-curso button{
+    margin-top: 20px;
+    padding: 2px 25px;
+    background-color: #fff;
+    color: #005C6E;
+    border: 2px solid #005C6E;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+/*QUADROS de AVISO*/
+@media screen and (max-width: 840px){
+    .info-eventos{
+        flex-direction: column;
+    }
+
+    .quadros{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*QUADROS de PRÓXIMOS EVENTOS*/
+@media screen and (max-width: 600px){
+    .infodata{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .infodata .data{
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px 0px;
+        width: 100%;
+        font-size: 0.8em;   
+    }
+
+    .infodata .info{
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+    }
+
+    .infodata .data p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .infodata .info p{
+        text-align: center;
+        margin: auto;
+    }
+}
