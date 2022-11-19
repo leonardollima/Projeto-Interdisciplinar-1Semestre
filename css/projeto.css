@@ -125,9 +125,17 @@
 
 
 
+/*METADE CINZA*/
+.metade-inferior{
+    background-color: #EAEDED;
+}
+
+
+
 /*QUADROS de CURSOS EXTRACURRICULARES*/
 .cursos-extracurriculares{
     background-color: #EAEDED;
+
 }
 
 
@@ -137,6 +145,7 @@
     width: 75%;
     margin: auto;
     margin-bottom: 15px;
+    
 }
 
 .quadros-cursos{
@@ -147,26 +156,42 @@
     font-size: 0.8em;
 }
 
+
+
+/*LOGO do CURSO*/
 .imagem-curso{
+    display: flex;
     background-color: #005C6E;
     width: 30%;
     border-radius: 10px 0px 0px 10px;
+    justify-content: center;
     
 }
 
+.imagem-curso img{
+   width: 90%; 
+}
 
+/*DESCRIÇÃO do CURSO*/
 .info-curso{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    padding: 10px 0px;
+    padding: 20px 0px;
     color: #005C6E;
     background-color: #fff;
     width: 70%;
     border-radius: 0px 10px 10px 0px;
 }
 
+
+
+/*BOTÃO*/
 .info-curso button{
-    margin-top: 20px;
+    align-self: center;
+    margin-top: 35px;
+    width: 90%;
     padding: 2px 25px;
     background-color: #fff;
     color: #005C6E;
@@ -176,6 +201,101 @@
 
 
 
+/*QUADROS de PROJETOS INTERDISCIPLINARES*/
+.projetos-interdisciplinares{
+    background-color: #EAEDED;
+}
+
+#descricao{
+    margin-bottom: 0;
+}
+
+.descricao h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projetos-dsm{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+.projetos-anual{
+    width: 32%;
+    display: flex;
+}
+
+.projetos-semestre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #005C6E;
+    width: 20%;
+    border-radius: 10px 0px 0px 10px;
+    height: 150px;
+    
+}
+
+.projetos-semestre img{
+    width: 100%;
+    
+}
+
+.projetos-semestre h3{
+    transform: rotate(270deg);
+    white-space: nowrap;
+    height: 16%;
+    text-align: center;
+    color: #fff;
+}
+
+.projetos-periodo{
+    width: 80%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    justify-content: space-around;
+}
+
+.projetos-periodo-esq{
+    margin: auto;
+}
+
+.projetos-periodo-esq h4{
+    padding: 15px 0px;
+    color: #005C6E;
+}
+
+.projetos-periodo-dir{
+    margin: auto;
+}
+
+.projetos-periodo-dir h4{
+    padding: 15px 0px;
+    color: #005C6E;
+}
+
+.projetos-acesso{
+    display: flex;
+}
+
+.projetos-acesso p{
+    padding-right: 10px;
+    color: #005C6E;
+}
+
+.projetos-acesso button{
+    width: 70%;
+    border: 2px solid #005C6E;
+    background-color: #fff;
+    color: #005C6E;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
 
 
 
@@ -222,5 +342,45 @@
     .infodata .info p{
         text-align: center;
         margin: auto;
+    }
+}
+
+
+
+/*QUADROS de CURSOS EXTRACURRICULARES*/
+@media screen and (max-width: 1215px){
+    .cursos{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .quadros-cursos{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .imagem-curso{
+        display: none;
+    }
+
+    .info-curso{
+        width: 100%;
+        justify-content: center;
+        background-color: #005C6E;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .info-curso button{
+        align-self: center;
+        margin-top: 25px;
+        width: 75%;
+        padding: 2px 25px;
+        background-color: #fff;
+        color: #005C6E;
+        font-weight: bolder;
+        border: 2px solid #fff;
+        border-radius: 5px;
     }
 }

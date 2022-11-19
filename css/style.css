@@ -337,31 +337,6 @@ label img{
 
 
 
-/*CONTEÚDO*/
-@media screen and (max-width: 650px){
-    .banner{
-        display: none;
-        width: 0%;
-    }
-
-    .github{
-        width: 40%;
-    }
-    
-    .github p{
-        font-size: 0.8em;
-    }
-    
-}
-
-@media screen and (max-width: 520px){
-    .github p{
-        display: none;
-    }
-}
-
-
-
 /*RODAPÉ*/
 @media screen and (max-width: 1410px){
     .container_espacamento{

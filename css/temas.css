@@ -113,7 +113,7 @@
 
 /*Container BANNER / DESCRIÇÃO dos TEMAS / REPOSITÓRIO*/
 .temas{
-    width: 75%;
+    width: 55%;
     padding-bottom: 100px;
     justify-content: center;
     margin: auto;
@@ -173,4 +173,39 @@
     padding: 10%;
     max-width: 40%;
     margin: auto;
+}
+
+
+
+/*RESPONSIVIDADE*/
+/*CONTEÚDO*/
+@media screen and (max-width: 880px){
+    .github p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .banner{
+        display: none;
+        width: 0%;
+    }
+    
+    .descricao p{
+        font-size: 0.9em;
+        margin: 10px 0px;
+    }
+    
+    .github{
+        width: 40%;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 520px){
+    .github p{
+        display: none;
+    }
 }
