@@ -1,9 +1,9 @@
+/*CONTEÚDO - ACESSIBILIDADE*/
 #conteudo{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #conteudo p{
@@ -13,7 +13,6 @@
 .conteudo-acessibilidade{
     width: 90%;
     text-align: left;
-    
 }
 
 .conteudo-acessibilidade h1{
@@ -30,6 +29,8 @@
 }
 
 
+
+/*CONTEÚDO - LIBRAS*/
 .conteudo-libras{
     text-align: left;
     background-color: #EAEDED;
