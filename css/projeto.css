@@ -77,6 +77,13 @@
     margin-top: 10px;
 }
 
+.quadros button:hover{
+    background-color: #747474;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 
 
 /*QUADROS de PRÓXIMOS EVENTOS*/
@@ -96,6 +103,17 @@
     padding: 15px 0px;
     background-color: #005C6E;
     border-radius: 10px 0px 0px 10px;
+}
+
+.infodata .data a{
+    text-decoration: none;
+    margin: auto;
+    color: #fff;
+}
+
+.infodata .data a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
 
 .infodata .data p{
@@ -196,6 +214,13 @@
     border-radius: 5px;
 }
 
+.info-curso button:hover{
+    background-color: #005C6E;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 
 
 /*QUADROS de PROJETOS INTERDISCIPLINARES*/
@@ -210,13 +235,13 @@
 .descricao h2{
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 
 .projetos-dsm{
     width: 90%;
     margin: auto;
     display: flex;
-    margin-top: 15px;
     padding-bottom: 50px;
     justify-content: space-around;
 }
@@ -236,11 +261,12 @@
     background-color: #005C6E;
     width: 20%;
     border-radius: 10px 0px 0px 10px;
-    height: 150px;
+    height: 150px;   
 }
 
 .projetos-semestre img{
-    width: 100%;   
+  width: 20px;
+  margin: auto;   
 }
 
 .projetos-semestre h3{
@@ -292,13 +318,24 @@
     color: #005C6E;
 }
 
+.projetos-acesso a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .projetos-acesso button{
-    width: 70%;
     border: 2px solid #005C6E;
     background-color: #fff;
     color: #005C6E;
     border-radius: 5px;
     padding: 2px 6px;
+}
+
+.projetos-acesso button:hover{
+    background-color: #005C6E;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -386,5 +423,50 @@
         font-weight: bolder;
         border: 2px solid #fff;
         border-radius: 5px;
+    }
+}
+
+
+
+/*QUADRO DE SEMESTRES - PROJETOS INTERDISCIPLINARES*/
+@media screen and (max-width: 1310px){
+    .projetos-anual{
+        flex-direction: column;
+    }
+
+    .projetos-semestre{
+        width: 100%;
+        height: 60px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+    .projetos-semestre img{
+        transform: rotate(90deg);
+    }
+
+    .projetos-periodo{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .projetos-dsm{
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin-top: 0;
+    }
+
+    .projetos-anual{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 510px){
+    .projetos-periodo{
+        flex-direction: column;
     }
 }

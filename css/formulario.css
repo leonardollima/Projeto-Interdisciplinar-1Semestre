@@ -277,6 +277,13 @@ select{
     width: 45%;
 }
 
+#banner-limpar:hover{
+    background-color: #333333;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 
 
 /*BOTÃO de CARREGAR IMAGEM*/
@@ -287,6 +294,13 @@ select{
     border: none;
     border-radius: 5px;
     width: 45%;
+}
+
+#banner-carregar:hover{
+    background-color: #005C6E;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -313,11 +327,25 @@ select{
     background-color: #2BB8C9;
 }
 
+#projeto-enviar:hover{
+    background-color: #005C6E;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 
 
 /*BOTÃO de LIMPAR o FORMULÁRIO*/
 #projeto-limpar{
     background-color: #747474;
+}
+
+#projeto-limpar:hover{
+    background-color: #333333;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 

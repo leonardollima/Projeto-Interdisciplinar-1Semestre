@@ -46,6 +46,10 @@
     text-decoration: none;
 }
 
+.acessibilidade a:hover{
+    text-decoration: underline;
+}
+
 .acessibilidade li{
     margin: 10px;
 }
@@ -160,6 +164,15 @@ label img{
     width: 100%;
     background-color: #333333;
     color:#fff;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
 }
 
 .container_espacamento{

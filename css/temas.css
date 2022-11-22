@@ -65,6 +65,10 @@
 
 
 /*BOTÃO de CADASTRO*/
+.cadastro a{
+    text-decoration: none;
+    color: #fff;
+}
 .cadastro button{
     display: flex;
     justify-content: center;
@@ -78,6 +82,13 @@
     border-radius: 5px;
     color: #005C6E;
     font-weight: bold;
+}
+
+.cadastro button:hover{
+    background-color: #005C6E;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
