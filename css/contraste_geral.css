@@ -1,0 +1,1832 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+/*GLOBAL*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 1em;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+}
+main{
+    background-color: #000;
+}
+/*GLOBAL*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*CABEÇALHO e RODAPÉ*/
+/*CABEÇALHO*/
+.cabecalho{
+    width: 100%;
+    background-color: #000; 
+    flex-direction: column;
+    margin-bottom: 200px;
+    display: flex;
+    margin: auto;
+    height: 100%;   
+}
+
+
+
+/*ACESSIBILIDADE*/
+.acessibilidade{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.acessibilidade a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.acessibilidade a:hover{
+    text-decoration: underline;
+}
+
+.acessibilidade li{
+    margin: 10px;
+}
+
+.atalhos, .links_access{
+    list-style: none;
+    display: inline-flex;  
+}
+
+.atalhos{
+   padding-left: 70px; 
+}
+
+.links_access{
+    padding-right: 70px; 
+}
+
+ 
+
+/*IMAGENS CABEÇALHO*/
+.icones_informativos{
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icones_informativos img{
+    filter: invert();
+}
+
+.esquerda{
+    padding-left: 5%;
+}
+
+.direita{
+    padding-right: 5%;
+}
+
+#logo_fatec{
+    width: 150px;
+    margin-top: 15px;
+    padding: 15px 30px 5px 0px;
+    border-right: solid 2px #fff;
+}
+
+#logo_cps{
+    width: 91px;
+    margin-left: 26px;
+}
+
+.direita img{
+    width: 38px;
+    margin-left: 15px;
+}
+
+
+
+/*MENU DE NAVEGAÇÃO*/
+.menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    justify-content: center; 
+    padding: 10px 0px 40px 0px; 
+}
+
+.menu_navegacao{
+    list-style: none;
+    display: inline-flex;
+    height: 100%; 
+}
+
+.menu_navegacao li{
+    font-family: 'Open Sans', serif;
+    font-weight: 300;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-transform: none;
+    color: #fff;    
+}
+
+.menu_navegacao li:hover{
+    border-top: solid 2px #fff;
+    cursor: pointer;
+}
+
+.menu_navegacao li a{
+    font-family: 'Open Sans', serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+/*ocultar MENU HAMBÚRGUER*/
+label[for="bt_menu"], #bt_menu{
+    display: none;
+}
+
+label img{
+    width: 30px;
+    filter: invert();
+}
+
+
+
+/*RODAPÉ*/
+.rodape{
+    width: 100%;
+    background-color: #000;
+    color:#fff;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+}
+
+.container_espacamento{
+    width: 100%;
+    display: flex;    
+}
+
+.rodape_esquerda{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 30px;
+    justify-content: space-around; 
+}
+
+.rodape_direita{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-right: 30px;
+    justify-content: space-around;
+}
+
+.tituulo_rodape{
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 30px 0px;
+}
+
+.item_lista_rodape{
+    margin:4px 0px;
+    list-style: none;
+    font-size: 1em;
+}
+
+.logos_rodape{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.imagem_rodape{
+    width: 120px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+}
+
+#logo_sp{
+    padding-right: 30px;
+    filter: invert();
+}
+
+.logo_central{
+    margin-left: 30px;
+    margin-right: 30px;
+    filter: invert();
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+/*BARRA DE ACESSIBILIDADE*/
+@media screen and (max-width: 820px){
+    .atalhos{
+        display: none;
+    }
+
+    .links_access{
+        padding: 0;
+    }
+
+    .acessibilidade{
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .acessibilidade{
+        font-size: 0.8em;
+        margin: auto;
+    }   
+}
+
+
+
+/*BARRA DE IMAGENS*/
+@media screen and (max-width: 550px){
+
+    #logo_fatec{
+        width: 75px;
+        padding: 15px 10px 5px 0px;
+    }
+    
+    #logo_cps{
+        width: 45px;
+        margin-left: 10px;
+    }
+    
+    .direita img{
+        width: 38px;
+    }
+    
+}
+
+@media screen and (max-width: 420px){
+    
+    .direita img{
+        width: 26px;
+        margin-left: 7px;
+    }
+
+    #logo_fatec{
+        width: 52px;
+    }
+    
+    #logo_cps{
+        width: 31px;
+    }
+    
+}
+
+
+
+/* MENU*/
+@media screen and (max-width: 1600px){
+
+    .menu{
+        height: auto;
+        justify-content: left; 
+        align-items: flex-start;
+        padding: 0px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_navegacao li{
+        font-family: 'Open Sans', serif;
+        font-weight: 300;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        text-transform: none;
+        color: #333333;
+        font-size: 0.8em;
+    }
+
+    .menu_navegacao{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+        margin: 2%;
+    }
+
+    #bt_menu:checked ~ .menu_navegacao{
+        display: block; 
+    }
+
+    .menu_navegacao li{
+        padding: 10px 1px 15px 1px;
+    }
+   
+    .menu_navegacao li ul{
+        position:static; 
+    }
+    .menu_navegacao li ul li{
+        position: relative; 
+        display: block; 
+    } 
+}
+
+
+
+/*RODAPÉ*/
+@media screen and (max-width: 1410px){
+    .container_espacamento{
+        flex-direction: row;       
+    }
+
+    .container_rodape{
+        width: 100%; 
+    }
+
+    .rodape_esquerda{
+        flex-direction: column;
+        justify-content: flex-start;    
+    }
+
+    .rodape_direita{
+        flex-direction: column;
+        justify-content: flex-start;   
+    }
+
+
+    .logos_rodape{
+        justify-content: space-around;
+        margin-top: 30px;   
+    }
+}
+
+@media screen and (max-width: 800px){
+    .imagem_rodape{
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .imagem_rodape{
+        display: none;
+    }
+
+    .container_espacamento{
+        flex-direction: column;       
+    }
+
+    .rodape_direita{
+        margin-left: 30px;       
+    }
+
+}
+/*CABEÇALHO e RODAPÉ*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*PÁGINA de PROJETOS*/
+.informativos{
+    flex-direction: column;
+    background-color: #000;
+}
+
+
+/*DESCRIÇÃO*/
+.informativos .descricao{
+    margin-bottom: 50px;
+    background-color: #000;
+}
+
+.descricao h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.descricao p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #fff;
+}
+
+
+
+/*QUADROS de EVENTOS*/
+.info-eventos{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.quadros{
+    width: 21%;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-top: 9px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.199);  
+}
+
+.quadros h2{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.quadros p{
+    font-size: 0.7em;
+    color: #fff;
+}
+
+#observacao{
+    color: #fff;
+    font-size: 0.6em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quadros button{
+    padding: 5px 35px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid yellow;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.quadros button:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*QUADROS de PRÓXIMOS EVENTOS*/
+.proximos-eventos{
+    background-color: #000;
+}
+.infodata{
+    display: flex;
+    margin: auto;
+    margin-bottom: 5px;
+    max-width: 60%;
+    justify-content: center;     
+}
+
+
+
+/*Container DATA*/
+.infodata .data{
+    width: 30%;
+    padding: 15px 0px;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infodata .data a{
+    text-decoration: none;
+    margin: auto;
+    color: yellow;
+}
+
+.infodata .data a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+
+.infodata .data p{
+    margin: auto;
+    color: yellow; /*Coloquei amarelo aqui pois o link está fora do p*/
+    padding: 10px;
+}
+
+
+
+/*Container INFORMATIVO*/
+.infodata .info{
+    width: 70%;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 0px;
+}
+
+.infodata .info p{
+    color: #fff;
+    text-align: left;
+    padding: 0px 10px;
+    font-size: 0.9em;
+}
+
+
+
+/*METADE CINZA*/
+.metade-inferior{
+    background-color: #000;
+}
+
+
+
+/*QUADROS de CURSOS EXTRACURRICULARES*/
+.cursos-extracurriculares{
+    background-color: #000;
+}
+
+
+.cursos{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;   
+}
+
+.quadros-cursos{
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+
+
+/*LOGO do CURSO*/
+.imagem-curso{
+    display: flex;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 30%;
+    border-radius: 10px 0px 0px 10px;
+    justify-content: center;   
+}
+
+.imagem-curso img{
+   width: 90%; 
+}
+
+
+
+/*DESCRIÇÃO do CURSO*/
+.info-curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 70%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+/*BOTÃO*/
+.info-curso button{
+    align-self: center;
+    margin-top: 35px;
+    width: 90%;
+    padding: 2px 25px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+.info-curso button:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*QUADROS de PROJETOS INTERDISCIPLINARES*/
+.projetos-interdisciplinares{
+    background-color: #000;
+}
+
+#descricao{
+    margin-bottom: 0;
+}
+
+.descricao h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.projetos-dsm{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+.projetos-anual{
+    width: 32%;
+    display: flex;
+}
+
+
+
+/*SEMESTRE*/
+.projetos-semestre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 20%;
+    border-radius: 10px 0px 0px 10px;
+    height: 150px;   
+}
+
+.projetos-semestre img{
+  width: 20px;
+  margin: auto;   
+}
+
+.projetos-semestre h3{
+    transform: rotate(270deg);
+    white-space: nowrap;
+    height: 16%;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/*PERÍODO*/
+.projetos-periodo{
+    width: 80%;
+    display: flex;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 0px 10px 10px 0px;
+    justify-content: space-around;
+}
+
+.projetos-periodo-esq{
+    margin: auto;
+}
+
+.projetos-periodo-esq h4{
+    padding: 15px 0px;
+    color: #fff;
+}
+
+.projetos-periodo-dir{
+    margin: auto;
+}
+
+.projetos-periodo-dir h4{
+    padding: 15px 0px;
+    color: #fff;
+}
+
+
+
+/*BOTÃO / MANHÃ - PERÍODO*/
+.projetos-acesso{
+    display: flex;
+}
+
+.projetos-acesso p{
+    padding-right: 10px;
+    color: #fff;
+}
+
+.projetos-acesso a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.projetos-acesso button{
+    border: 2px solid yellow;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+.projetos-acesso button:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*RESPONSIVIDADE*/
+/*QUADROS de AVISO*/
+@media screen and (max-width: 840px){
+    .info-eventos{
+        flex-direction: column;
+    }
+
+    .quadros{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*QUADROS de PRÓXIMOS EVENTOS*/
+@media screen and (max-width: 600px){
+    .infodata{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .infodata .data{
+        border-radius: 10px 10px 0px 0px;
+        padding: 5px 0px;
+        width: 100%;
+        font-size: 0.8em;   
+    }
+
+    .infodata .info{
+        border-radius: 0px 0px 10px 10px;
+        width: 100%;
+    }
+
+    .infodata .data p{
+        text-align: center;
+        margin: auto;
+    }
+
+    .infodata .info p{
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
+
+/*QUADROS de CURSOS EXTRACURRICULARES*/
+@media screen and (max-width: 1215px){
+    .cursos{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .quadros-cursos{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .imagem-curso{
+        display: none;
+    }
+
+    .info-curso{
+        width: 100%;
+        justify-content: center;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .info-curso button{
+        align-self: center;
+        margin-top: 25px;
+        width: 75%;
+        padding: 2px 25px;
+        background-color: #000;
+        color: #fff;
+        font-weight: bolder;
+        border: 2px solid yellow;
+        border-radius: 5px;
+    }
+}
+
+
+
+/*QUADRO DE SEMESTRES - PROJETOS INTERDISCIPLINARES*/
+@media screen and (max-width: 1310px){
+    .projetos-anual{
+        flex-direction: column;
+    }
+
+    .projetos-semestre{
+        width: 100%;
+        height: 60px;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+
+    .projetos-semestre img{
+        transform: rotate(90deg);
+    }
+
+    .projetos-periodo{
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .projetos-dsm{
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin-top: 0;
+    }
+
+    .projetos-anual{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 510px){
+    .projetos-periodo{
+        flex-direction: column;
+    }
+}
+/*PÁGINA de PROJETOS*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*PÁGINA de EVENTO*/
+/*CONTEÚDO*/
+#conteudo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+
+
+/*TÍTULO E TEMA do Evento*/
+.titulo-tema h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 25px;
+    max-width: 35%;
+}
+
+.titulo-tema p{
+    text-align: center;
+    margin: auto;
+    max-width: 74%;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+
+
+/*IMAGEM DO EVENTO*/
+.imagem-evento{
+    /*text-align: center;*/
+    border: 6px solid #fff;
+    margin: 45px 0px 20px 0px;
+    max-width: 90%;
+}
+
+.imagem-evento img{
+    width: 100%;
+    filter: invert();
+}
+
+
+
+/*DESCRIÇÃO do Evento*/
+.descricao{
+    width: 70%;
+    text-align: left;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 45px;
+    margin-top: 25px;
+}
+
+.descricao #texto-vermelho{
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+
+/*CONTATOS*/
+.contatos{
+    width: 70%;
+    text-align: left;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 45px;
+    margin-top: 45px;
+    margin-bottom: 55px;
+}
+/*PÁGINA de EVENTO*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*PÁGINA de TEMAS*/
+/*INFORMATIVO/DESCRITIVO sobre o Projeto Interdisciplinar*/
+.cadastro h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.cadastro p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #fff;
+}
+
+
+
+/*Container DATA e INFORMATIVO*/
+.infodata{
+    display: flex;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    max-width: 75%;
+    justify-content: center;     
+}
+
+
+
+/*Container DATA*/
+.infodata .data{
+    width: 30%;
+    padding: 15px 0px;
+    background-color: #000;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.infodata .data p{
+    margin: auto;
+    color: #fff;
+}
+
+
+
+/*Container INFORMATIVO*/
+.infodata .info{
+    width: 70%;
+    background-color: #000;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 0px;
+}
+
+.infodata .info p{
+    color: #fff;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+
+
+/*BOTÃO de CADASTRO*/
+.cadastro a{
+    text-decoration: none;
+    color: yellow;
+}
+.cadastro button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 70px;
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cadastro button:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*VISUALIZAÇÃO DE TEMAS dos Projetos Interdisciplinares anteriores*/
+.projetos{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.projetos h1{
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 25px;
+    justify-self: center;
+    width: 45%;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.projetos h2{
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+
+/*Container BANNER / DESCRIÇÃO dos TEMAS / REPOSITÓRIO*/
+.temas{
+    width: 55%;
+    padding-bottom: 100px;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/*Container BANNER*/
+.temas .banner{
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px 0px 0px 10px;
+    width: 20%;
+}
+
+.temas .banner img{
+    width: 100%;
+    margin: auto;
+    max-width: 40%;
+    filter: invert();
+}
+
+
+
+/*Container DESCRIÇÃO dos TEMAS*/
+.temas .descricao{
+    background-color: #000;
+    display: grid;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.temas .descricao h3{
+    color: #fff;
+    padding-top: 5px;
+}
+
+
+
+/*Container REPOSITÓRIO*/
+.temas .github{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px;
+    width: 20%;
+    background-color: #000; 
+    border: 1px solid #fff;
+}
+
+.temas .github a{
+    color: yellow;
+    text-decoration: none;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.temas .github img{
+    padding: 10%;
+    max-width: 40%;
+    margin: auto;
+}
+
+
+
+/*RESPONSIVIDADE*/
+/*CONTEÚDO*/
+@media screen and (max-width: 880px){
+    .github p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .banner{
+        display: none;
+        width: 0%;
+    }
+    
+    .descricao p{
+        font-size: 0.9em;
+        margin: 10px 0px;
+    }
+    
+    .github{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .github p{
+        display: none;
+    }
+}
+/*PÁGINA de TEMAS*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*PÁGINA do FORMULÁRIO*/
+/*DESCRIÇÃO*/
+.descricao{
+    margin-bottom: 50px;
+}
+
+.descricao h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+.descricao p{
+    text-align: center;
+    margin: auto;
+    max-width: 85%;
+    color: #fff; 
+}
+
+
+
+/*ESPAÇO do FORMULARIO*/
+.formulario{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #000;
+}
+
+
+
+/*FORMULÁRIO*/
+#formulario_projeto {
+    width: 100%;
+}
+
+#formulario_projeto label{
+    color: #fff;    
+}
+
+#formulario_projeto input{
+    margin: 10px 0px;
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    width: 90%;  
+    background-color: #fff;
+}
+
+
+
+/*FIELDSET - PROJETO INTERDISCIPLINAR*/
+.fieldset_projeto_interdiciplinar{
+    border-radius: 10px;
+}
+
+.legenda{
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+/*NOME / R.A / CURSO / PERÍODO / SEMESRE - PROJETO INTERDISCIPLINAR*/
+.formulario_projeto_informacoes{
+    width: 96%;
+    margin:auto;
+}
+
+
+
+/*NOME / R.A - PROJETO INTERDISCIPLINAR*/
+.div_superior{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+/*NOME - PROJETO INTERDISCIPLINAR*/
+.div_superior_esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+/*R.A - PROJETO INTERDISCIPLINAR*/
+.div_superior_direita{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#ra{
+    max-width: 36%;
+}
+
+
+
+/*CURSO / PERÍODO / SEMESTRE - PROJETO INTERDISCIPLINAR*/
+.div_inferior{
+    display: flex;
+}
+
+select{
+    border:none;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+
+
+/*CURSO*/
+.inferior_esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#curso{
+    width: 90%;
+}
+
+
+
+/*PERÍODO*/
+.inferior_central{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+#periodo{
+    width: 90%;
+}
+
+
+
+/*SEMESTRE*/
+.inferior_direita{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*INTEGRANTES GRUPO e PROJETO*/
+.div_upload{
+    width: 96%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*FIELDSET - INTEGRANTES GRUPO*/
+.fieldset_esquerdo{
+    width: 44.8%;
+    border-radius: 10px;
+}
+
+.integrantes {
+    width: 95%;
+    margin: auto;
+    padding: 5px 0px;
+    display: flex;
+}
+
+.labelME{
+    margin: 0px 10px;
+    align-self: center;
+}
+
+
+
+/*FIELDSET - PROJETO*/
+.fieldset_direito{
+    width: 49.5%;
+    border-radius: 10px;
+}
+
+
+
+/*TEMA e GITHUB - PROJETO*/
+.projeto-input{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/*DESCRITIVO e BANNER*/
+.projeto-informacoes{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.labelMD{
+    padding-left: 30px;
+    padding-bottom: 2px;
+}
+
+
+
+/*DESCRITIVO*/
+.projeto-descricao{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+}
+
+#descricao{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 7px;
+    border: 1px solid #fff;
+}
+
+
+
+/*IMAGEM e BANNER*/
+.projeto-banner{
+    width: 50%;
+    margin: auto;    
+}
+
+
+
+/*IMAGEM*/
+.imagem-banner{
+    width: 35%;
+    filter: invert();
+}
+
+
+
+/*BANNER*/
+.titulo-banner{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*BOTÕES de UPLOAD de IMAGEM*/
+.btn-banner{
+    display: flex;
+}
+
+
+
+/*BOTÃO de LIMPAR de IMAGEM*/
+#banner-limpar{
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#banner-limpar:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*BOTÃO de CARREGAR IMAGEM*/
+#banner-carregar{
+    padding: 5px;
+    background-color: #000;
+    border: 1px solid yellow;
+    color: #fff;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#banner-carregar:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*BOTÕES de ENVIO de FORMULÁRIO*/
+.btn-projeto{
+    display: flex;
+    justify-content: center;   
+}
+
+.btn-formulario{
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 30px;
+    margin: 30px 10px; 
+}
+
+
+
+/*BOTÃO de ENVIAR o FORMULÁRIO*/
+#projeto-enviar{
+    background-color: #000;
+    border: 1px solid yellow;
+}
+
+#projeto-enviar:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*BOTÃO de LIMPAR o FORMULÁRIO*/
+#projeto-limpar{
+    background-color: #000;
+    border: 1px solid yellow;
+}
+
+#projeto-limpar:hover{
+    background-color: yellow;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*RESPONSIVIDADE - FORMLÁRIO*/
+@media screen and (max-width: 1410px){
+    /*FORMULÁRIO*/
+    #formulario_projeto input{
+        width: 100%;
+    }
+
+
+
+    /*NOME / R.A - PROJETO INTERDISCIPLINAR*/
+    .div_superior{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+
+
+    /*NOME - PROJETO INTERDISCIPLINAR*/
+    .div_superior_esquerda{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+    /*R.A - PROJETO INTERDISCIPLINAR*/
+    .div_superior_direita{
+        width: 90%;
+        margin: auto;
+    }
+
+    #ra{
+        max-width: 100%;
+    }
+
+
+
+    /*CURSO / PERÍODO / SEMESTRE - PROJETO INTERDISCIPLINAR*/
+    .div_inferior{
+        flex-direction: column;  
+    }
+
+
+
+    /*CURSO*/
+    .inferior_esquerda{
+        width: 90%;
+        margin: auto;
+    }
+
+    #curso{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+
+
+    /*PERÍODO*/
+    .inferior_central{
+        width: 90%;
+        margin: auto;
+    }
+
+    #periodo{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+
+
+    /*SEMESTRE*/
+    .inferior_direita{
+        width: 90%;
+        margin: auto;
+    }
+
+    #semestre{
+        margin: 10px 0px;
+    }
+    
+
+
+    /*INTEGRANTES GRUPO e PROJETO*/
+    .div_upload{
+        flex-direction: column;       
+    }
+
+
+
+    /*FIELDSET - INTEGRANTES GRUPO*/
+    .fieldset_esquerdo{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+    /*FIELDSET - PROJETO*/
+    .fieldset_direito{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+    /*BANNER*/
+    #banner{
+        max-width: 90%;
+    }
+
+
+
+    /*BOTÕES de UPLOAD de IMAGEM*/
+    .btn-banner{
+        margin: 10px 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    /*ESPAÇO do FORMULARIO*/
+    .formulario{
+        width: 90%;
+    }
+
+
+
+    /*FIELDSET - INTEGRANTES GRUPO*/
+    .integrantes{
+        flex-direction: column;
+    }
+
+    .labelME{
+        align-self: flex-start;
+    }
+
+
+
+    /*TEMA e GITHUB - PROJETO*/
+    .projeto-input{
+        flex-direction: column;
+
+    }
+
+
+
+    /*DESCRITIVO e BANNER*/
+    .projeto-informacoes{
+        flex-direction: column;
+    }
+
+
+
+    /*DESCRITIVO*/
+    .projeto-descricao{
+        width: 100%;
+    }
+
+
+
+    /*IMAGEM e BANNER*/
+    .projeto-banner{
+        width: 80%;
+        margin: auto;
+        
+    }
+
+
+
+    /*BANNER*/
+    #banner{
+        max-width: 100%;
+    }
+
+
+
+    /*BOTÕES de UPLOAD de IMAGEM*/
+    .btn-banner{
+        margin: 10px 0px;
+    }
+}
+/*PÁGINA do FORMULÁRIO*/
+
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+
+/*PÁGINA de ACESSIBILIDADE*/
+/*CONTEÚDO - ACESSIBILIDADE*/
+#conteudo{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudo p{
+    line-height: 40px;
+    
+}
+
+.conteudo-acessibilidade{
+    width: 90%;
+    text-align: left;
+    color: #fff;
+}
+
+.conteudo-acessibilidade h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top: 25px;
+    max-width: 45%;
+}
+
+
+
+/*CONTEÚDO - LIBRAS*/
+.conteudo-libras{
+    text-align: left;
+    background-color: #000;
+    border: 1px solid #fff;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.conteudo-libras a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.conteudo-libras a:hover{
+    text-decoration: underline;
+}
+/*PÁGINA de ACESSIBILIDADE*/
+
+
+
+

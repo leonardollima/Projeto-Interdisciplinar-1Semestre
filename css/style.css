@@ -159,6 +159,39 @@ label img{
 
 
 
+
+/*CAMINHO de MIGALHAS*/
+.breadcrumb{
+    padding-top: 1%;
+    padding-left: 2%;
+    list-style: none;
+}
+
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.breadcrumb a{
+    color: #000;
+
+}
+
+.breadcrumb li a:hover{
+    color: #931914;
+    
+}
+
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+
+
+
 /*RODAPÉ*/
 .rodape{
     width: 100%;
