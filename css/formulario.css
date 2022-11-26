@@ -53,6 +53,11 @@
     background-color: #F4F4F4;
 }
 
+.required::after{
+    content: " *";
+    color: red;
+}
+
 
 
 /*FIELDSET - PROJETO INTERDISCIPLINAR*/
@@ -225,7 +230,7 @@ select{
     text-align: left;
 }
 
-#descricao{
+#descricao-form-projeto{
     width: 80%;
     height: 80%;
     margin: auto;

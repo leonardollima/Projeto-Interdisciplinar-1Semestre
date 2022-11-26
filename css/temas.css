@@ -22,7 +22,7 @@
 
 
 /*Container DATA e INFORMATIVO*/
-.infodata{
+.infodata-temas{
     display: flex;
     margin: auto;
     margin-bottom: 70px;
@@ -34,14 +34,14 @@
 
 
 /*Container DATA*/
-.infodata .data{
+.infodata-temas .data-temas{
     width: 30%;
     padding: 15px 0px;
     background-color: #005C6E;
     border-radius: 10px 0px 0px 10px;
 }
 
-.infodata .data p{
+.infodata-temas .data-temas p{
     margin: auto;
     color: #fff;
 }
@@ -49,14 +49,14 @@
 
 
 /*Container INFORMATIVO*/
-.infodata .info{
+.infodata-temas .info-temas{
     width: 70%;
     background-color: #EAEDED;
     border-radius: 0px 10px 10px 0px;
     padding: 10px 0px;
 }
 
-.infodata .info p{
+.infodata-temas .info-temas p{
     color: #686868;
     text-align: left;
     font-size: 0.9em;
@@ -148,14 +148,14 @@
 
 
 /*Container DESCRIÇÃO dos TEMAS*/
-.temas .descricao{
+.temas .descricao-temas{
     background-color: #fff;
     display: grid;
     width: 60%;
     padding-left: 10px;
 }
 
-.temas .descricao h3{
+.temas .descricao-temas h3{
     color: #005C6E;
     padding-top: 5px;
 }
@@ -202,7 +202,7 @@
         width: 0%;
     }
     
-    .descricao p{
+    .descricao-temas p{
         font-size: 0.9em;
         margin: 10px 0px;
     }

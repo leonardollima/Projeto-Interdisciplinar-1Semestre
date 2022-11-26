@@ -176,11 +176,11 @@ label img{
 
 .breadcrumb a{
     color: #000;
-
+    text-decoration: none;
 }
 
 .breadcrumb li a:hover{
-    color: #931914;
+    text-decoration: underline;
     
 }
 

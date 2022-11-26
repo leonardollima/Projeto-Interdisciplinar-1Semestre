@@ -610,6 +610,7 @@ label img{
 
 .imagem-curso img{
    width: 90%; 
+   color: #fff;
 }
 
 
@@ -696,6 +697,7 @@ label img{
 .projetos-semestre img{
   width: 20px;
   margin: auto;   
+  color: #fff;
 }
 
 .projetos-semestre h3{
@@ -908,12 +910,47 @@ label img{
 
 /*PÁGINA de EVENTO*/
 /*CONTEÚDO*/
-#conteudo{
+#conteudo-eventos{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     background-color: #000;
+}
+
+
+
+/*CAMINHO de MIGALHAS*/
+.caminho_migalhas{
+    width: 100%;
+    text-align: left;
+}
+
+.breadcrumb{
+    background-color: #000;
+}
+
+.breadcrumb ul{
+    color: #fff;
+}
+
+.breadcrumb li{
+    color: #fff;
+}
+
+.breadcrumb a{
+    color: yellow;
+}
+
+.breadcrumb a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #fff;
 }
 
 
@@ -959,7 +996,7 @@ label img{
 
 
 /*DESCRIÇÃO do Evento*/
-.descricao{
+.descricao-eventos{
     width: 70%;
     text-align: left;
     background-color: #000;
@@ -969,7 +1006,7 @@ label img{
     margin-top: 25px;
 }
 
-.descricao #texto-vermelho{
+.descricao-eventos #texto-vermelho{
     color: #fff;
     padding-top: 15px;
 }
@@ -1018,26 +1055,29 @@ label img{
 
 
 /*Container DATA e INFORMATIVO*/
-.infodata{
+.infodata-temas{
     display: flex;
     margin: auto;
     margin-bottom: 70px;
     margin-top: 40px;
     max-width: 75%;
     justify-content: center;     
+    border: 1px solid #fff;
+    border-radius: 10px;
 }
 
 
 
 /*Container DATA*/
-.infodata .data{
+.infodata-temas .data-temas{
     width: 30%;
     padding: 15px 0px;
     background-color: #000;
     border-radius: 10px 0px 0px 10px;
+    border: 1px solid #fff;
 }
 
-.infodata .data p{
+.infodata-temas .data-temas p{
     margin: auto;
     color: #fff;
 }
@@ -1045,14 +1085,15 @@ label img{
 
 
 /*Container INFORMATIVO*/
-.infodata .info{
+.infodata-temas .info-temas{
     width: 70%;
     background-color: #000;
     border-radius: 0px 10px 10px 0px;
     padding: 10px 0px;
+    border: 1px solid #fff;
 }
 
-.infodata .info p{
+.infodata-temas .info-temas p{
     color: #fff;
     text-align: left;
     font-size: 0.9em;
@@ -1146,14 +1187,16 @@ label img{
 
 
 /*Container DESCRIÇÃO dos TEMAS*/
-.temas .descricao{
+.temas .descricao-temas{
     background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
     display: grid;
     width: 60%;
     padding-left: 10px;
 }
 
-.temas .descricao h3{
+.temas .descricao-temas h3{
     color: #fff;
     padding-top: 5px;
 }
@@ -1179,6 +1222,10 @@ label img{
     text-align: center;
 }
 
+.temas .github a:hover{
+    text-decoration: underline;
+}
+
 
 .temas .github img{
     padding: 10%;
@@ -1202,7 +1249,7 @@ label img{
         width: 0%;
     }
     
-    .descricao p{
+    .descricao-temas p{
         font-size: 0.9em;
         margin: 10px 0px;
     }
@@ -1256,7 +1303,7 @@ label img{
     display: flex;
     width: 70%;
     margin: auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: #000;
 }
 
@@ -1278,6 +1325,11 @@ label img{
     border-bottom: 1px solid #fff;
     width: 90%;  
     background-color: #fff;
+}
+
+.required::after{
+    content: " *";
+    color: yellow;
 }
 
 
@@ -1452,7 +1504,7 @@ select{
     text-align: left;
 }
 
-#descricao{
+#descricao-form-projeto{
     width: 80%;
     height: 80%;
     margin: auto;
@@ -1772,14 +1824,14 @@ select{
 
 /*PÁGINA de ACESSIBILIDADE*/
 /*CONTEÚDO - ACESSIBILIDADE*/
-#conteudo{
+#conteudo-acessibilidade{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-#conteudo p{
+#conteudo-acessibilidade p{
     line-height: 40px;
     
 }
@@ -1809,9 +1861,8 @@ select{
 .conteudo-libras{
     text-align: left;
     background-color: #000;
-    border: 1px solid #fff;
     width: 90%;
-    padding: 20px;
+    padding: 0;
     border-radius: 10px;
     margin-bottom: 20px;
     color: #fff;

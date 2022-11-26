@@ -1,12 +1,12 @@
 /*CONTEÚDO - ACESSIBILIDADE*/
-#conteudo{
+#conteudo-acessibilidade{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-#conteudo p{
+#conteudo-acessibilidade p{
     line-height: 40px;
 }
 
