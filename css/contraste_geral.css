@@ -74,6 +74,14 @@ main{
     padding-right: 70px; 
 }
 
+#contraste{
+    display: none;
+}
+
+#semcontraste{
+    display: block;
+}
+
  
 
 /*IMAGENS CABEÇALHO*/

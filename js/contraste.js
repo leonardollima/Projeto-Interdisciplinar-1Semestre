@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-    let url1 = "../css/estilo.css"
-    let url2 = "../css/contraste.css"
+    let url1 = "../css/style.css"
+    let url2 = "../css/contraste_geral.css"
     let contraste = document.getElementById("contraste")
     let semcontraste = document.getElementById("semcontraste")
 
@@ -17,22 +17,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let tag = document.getElementsByClassName("acess") //<link  href=url rel="stylesheet" type="text/css">
 
-    var q = 0
-    
-    if(q != 0){
-         
-        q++
-        contraste.onclick = function(){
-            tag[0].href = url2
-            localStorage.setItem("css", url2)
-        }
-    }else{
-        contraste.onclick = function(){
-            tag[0].href = url1
-            localStorage.setItem("css", url1)
-        }
+    contraste.onclick = function(){
+        tag[0].href = url2
+        localStorage.setItem("css", url2)
     }
-    
+
+    semcontraste.onclick = function(){
+        tag[0].href = url1
+        localStorage.setItem("css", url1)
+    }
 
     let css = localStorage.getItem("css")
 
