@@ -259,7 +259,7 @@ label img{
 
 /*RESPONSIVIDADE*/
 /*BARRA DE ACESSIBILIDADE*/
-@media screen and (max-width: 820px){
+@media screen and (max-width: 880px){
     .atalhos{
         display: none;
     }
