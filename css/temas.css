@@ -191,18 +191,18 @@
 /*RESPONSIVIDADE*/
 /*CONTEÚDO*/
 @media screen and (max-width: 880px){
-    .github p{
+    .temas .github p{
         display: none;
     }
 }
 
 @media screen and (max-width: 650px){
-    .banner{
+    .temas .banner{
         display: none;
         width: 0%;
     }
     
-    .descricao-temas p{
+    .temas .descricao-temas p{
         font-size: 0.9em;
         margin: 10px 0px;
     }
@@ -213,7 +213,7 @@
 }
 
 @media screen and (max-width: 520px){
-    .github p{
+    .temas .github p{
         display: none;
     }
 }

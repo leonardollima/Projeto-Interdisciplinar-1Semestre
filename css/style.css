@@ -13,7 +13,6 @@
 
 .flex-container{
     display: flex;
-    
 }
 
 
@@ -51,7 +50,7 @@
 }
 
 .acessibilidade li{
-    margin: 10px;
+    padding: 10px;
 }
 
 .atalhos, .links_access{
@@ -69,6 +68,7 @@
 
 #semcontraste{
     display: none;
+    margin: 0px;
 }
 
  
@@ -273,7 +273,7 @@ label img{
 
 /*RESPONSIVIDADE*/
 /*BARRA DE ACESSIBILIDADE*/
-@media screen and (max-width: 820px){
+@media screen and (max-width: 880px){
     .atalhos{
         display: none;
     }
